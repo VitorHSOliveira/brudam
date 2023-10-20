@@ -1,24 +1,22 @@
 # Teste Brudam
 
-Olá,
 
-Estou utilizando o Laragon.
+> *Utilizei o [Laragon](https://laragon.org/download/index.html) como servidor de PHP.*
 
 Conexao é feita localhost padrão.
 
-para o projeto funcionar, rode o comando de migrations para criar as tabelas:
+### Migrations
+
+Abra seu terminal, e rode o comando abaixo. O comando executara as migrations do banco de dados.
 
 ```
 php artisan migrate
 ```
----
-
-E rode o comando de seeds para criar registros aleatórios de 20 cidades e 5 clientes:
+Com as tabelas criadas pela migrations, rode o comando seed para preencher o banco com dados fictícios de 20 cidades e 5 clientes.
 
 ```
 php artisan db:seed
 ```
----
 
 <!--
  ____                 _
