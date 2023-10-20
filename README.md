@@ -1,3 +1,5 @@
+# Teste Brudam
+
 Olá,
 
 Estou utilizando o Laragon.
@@ -6,14 +8,16 @@ Conexao é feita localhost padrão.
 
 para o projeto funcionar, rode o comando de migrations para criar as tabelas:
 
+```
 php artisan migrate
-
+```
 ---
 
 E rode o comando de seeds para criar registros aleatórios de 20 cidades e 5 clientes:
 
+```
 php artisan db:seed
-
+```
 ---
 
 <!--
