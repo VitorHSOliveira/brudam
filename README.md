@@ -3,7 +3,9 @@
 
 > *Utilizei o [Laragon](https://laragon.org/download/index.html) como servidor de PHP, mas você pode usar qualquer um web server.*
 
-Conexao é feita localhost padrão.
+### Banco de Dados
+
+* Na raiz do projeto está um arquivo **banco.sql**, rode ele em seu banco de dados para realizar a criação do mesmo.
 
 ### Instalação e carregamento
 
