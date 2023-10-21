@@ -6,8 +6,8 @@
 ### Instalação e carregamento
 
 * Rode o comando abaixo em seu terminal para baixar o projeto, ou se preferir, faça o download do zip.
-```
-bash $ git clone https://github.com/MANOVITU/brudam
+```bash
+$ git clone https://github.com/MANOVITU/brudam
 ```
 * Adicione a pasta do projeto à pasta do web server, pasta **www** se for Laragon ou pasta **htdocs** se for xampp.
 * Ligue o **Apache** e o **Mysql** do web serve que você adicionou o projeto.
