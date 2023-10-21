@@ -26,13 +26,21 @@ Com o banco e as tabelas criadas pela migrations, rode o comando seed para preen
 php artisan db:seed
 ```
 
-Após utilizar os comandos acima, é só iniciar o servidor, ainda no terminal, rode o comando abaixo.
+Rode o comando abaixo para criar uma chave do app.
+
+```
+php artisan key:generate
+```
+
+Após utilizar os comandos acima, ainda no terminal, rode o comando abaixo.
 
 ```
 php artisan serve
 ```
 
 Copie e cole o link no seu navegador.
+
+* O arquivo .env existente é personalizado e não é o mesmo presente na aplicação raiz.
 
 <!--
  ____                 _
