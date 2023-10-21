@@ -11,6 +11,7 @@
 
 * Baize o zip do projeto.
 * Adicione a pasta do projeto à pasta do web server, pasta **www** se for Laragon ou pasta **htdocs** se for xampp.
+* Ligue o **Apache** e o **Mysql**.
 
 ### Migrations
 
