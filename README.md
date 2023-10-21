@@ -5,7 +5,7 @@
 
 ### Instalação e carregamento
 
-* Rode o comando abaixo em seu terminal para baixar o projeto, ou se preferir, faça o download do zip
+* Rode o comando abaixo em seu terminal para baixar o projeto, ou se preferir, faça o download do zip.
 ```
 bash $ git clone https://github.com/MANOVITU/brudam
 ```
