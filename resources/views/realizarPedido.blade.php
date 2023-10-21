@@ -1,5 +1,4 @@
 @extends('layout')
-
 <div class="container mt-5">
   @if($mensagem = Session::get('adicionado'))
   <div class="card text-bg-success mb-3" style="max-width: 30%;">
