@@ -17,28 +17,6 @@ class PedidoController extends Controller
         return view('pedidos', compact('pedidos'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-
-    public function create(Request $dados)
-    {
-        // return $dados;
-        $pedido = Pedido::create([
-            'id_cliente' => $dados->id_cliente,
-            'id_cidade' => $dados->id_cidade,
-            'data_entrega' => $dados->data_entrega,
-            'valor_frete' => $dados->valor_frete,
-        ]);
-
-        if ($pedido) {
-            return redirect()->route('createPedido.index')->with('adicionado', 'Pedido adicionado com sucesso!');
-        } else {
-            return redirect()->route('createPedido.index')->with('erro', 'Ocorreu um erro ao adicionar o pedido.');
-        }
-
-        return redirect()->route('cliente.index')->with('adicionado', 'Pedido adicionar com sucesso!');
-    }
 
     public function remove(Request $request){
         $id = $request->input('id');

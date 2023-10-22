@@ -1,5 +1,5 @@
 @extends('layout')
-<div class="container mt-5">
+<div class="container mt-5" style='display: flex;flex-direction: column;align-items: center;'>
   @if($mensagem = Session::get('adicionado'))
   <div class="card text-bg-success mb-3" style="max-width: 30%;">
     <div class="card-body">
@@ -17,7 +17,7 @@
   @endif
 
   <p class="text-center  text-uppercase fs-2">Adicionar Pedido</p>
-  <form action="{{route('pedidos.create')}}" method="POST" enctype="multipart/form-data">
+  <form action="{{route('createPedido.create')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
       <label for="id_cliente" class="form-label">Selecione o Cliente</label>
@@ -48,6 +48,8 @@
     <button type="submit" class="btn btn-outline-success">Cadastrar pedido!</button>
     <a href="{{route('pedidos.index')}}"><button type="button" class="btn btn-outline-secondary">Vizualizar pedidos
         existentes!</button></a>
+    <a href="{{route('rotas.index')}}"><button type="button" class="btn btn-outline-secondary">Vizualizar
+        rotas!</button></a>
   </form>
 </div>
 
