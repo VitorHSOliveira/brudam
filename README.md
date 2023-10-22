@@ -18,7 +18,7 @@ $ git clone https://github.com/MANOVITU/brudam
 
 ### Migrations
 
-No terminal do seu web server, entre na pasta do projeto e rode o comando abaixo. O comando executara as migrations do banco de dados e criará o **banco** e as **tabelas**.
+No terminal do seu web server, entre na pasta do projeto e rode o comando abaixo. O comando executara as migrations do banco de dados e criará as **tabelas**.
 
 ```
 php artisan migrate
