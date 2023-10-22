@@ -27,13 +27,6 @@ class CreatePedidoController extends Controller
      */
     public function create(Request $dados)
     {
-    // return $dados;
-    $pedido = CreatePedido::create([
-        'id_cliente' => $dados->id_cliente,
-        'id_cidade' => $dados->id_cidade,
-        'data_entrega' => $dados->data_entrega,
-        'valor_frete' => $dados->valor_frete,
-    ]);
 
     $dataHoje = date('Y-m-d');
     $dataEntrega = $dados->data_entrega;
@@ -41,6 +34,14 @@ class CreatePedidoController extends Controller
     if ($dataEntrega < $dataHoje) {
         return redirect()->route('createPedido.index')->with('erro', 'A data de entrega não pode ser anterior à data de hoje.');
     }
+    
+    // return $dados;
+    $pedido = CreatePedido::create([
+        'id_cliente' => $dados->id_cliente,
+        'id_cidade' => $dados->id_cidade,
+        'data_entrega' => $dados->data_entrega,
+        'valor_frete' => $dados->valor_frete,
+    ]);
 
     if ($pedido) {
         return redirect()->route('createPedido.index')->with('adicionado', 'Pedido adicionado com sucesso!');
