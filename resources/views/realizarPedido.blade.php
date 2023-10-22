@@ -46,9 +46,9 @@
         placeholder="Digite o valor do frete a ser cobrado...">
     </div>
     <button type="submit" class="btn btn-outline-success">Cadastrar pedido!</button>
-    <a href="{{route('pedidos.index')}}"><button type="button" class="btn btn-outline-secondary">Vizualizar pedidos
+    <a href="{{route('pedidos.index')}}"><button type="button" class="btn btn-outline-secondary">Visualizar pedidos
         existentes!</button></a>
-    <a href="{{route('rotas.index')}}"><button type="button" class="btn btn-outline-secondary">Vizualizar
+    <a href="{{route('rotas.index')}}"><button type="button" class="btn btn-outline-secondary">Visualizar
         rotas!</button></a>
   </form>
 </div>
